@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI with Tracy Resource Vault</title>
+    <meta
+      name="description"
+      content="AI with Tracy Resource Vault: launch-ready lead magnets, prompt packs, tool guides, membership tiers, and automation plans."
+    />
+    <link rel="stylesheet" href="/vault-app/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#overview">
+          <span class="brand-mark">AT</span>
+          <span>
+            <strong>AI with Tracy</strong>
+            <small>Resource Vault MVP</small>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="#launchpad">Launchpad</a>
+          <a href="#vault">Vault</a>
+          <a href="#prompts">Prompts</a>
+          <a href="#tools">Tools</a>
+          <a href="#membership">Membership</a>
+          <a href="#ops">Ops</a>
+        </nav>
+        <div class="topbar-meta">
+          <span class="tier-pill" id="header-tier">Free Explorer</span>
+          <span class="user-pill" id="header-user">Demo mode</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero panel" id="overview">
+          <div class="hero-copy">
+            <p class="eyebrow">Build the vault first</p>
+            <h1>Turn the report into a working AI content and membership platform.</h1>
+            <p class="lede">
+              This MVP packages the five foundation guides, premium roadmap, prompt
+              library, tool directory, monetization ladders, and operations plan into
+              one owned destination for AI with Tracy.
+            </p>
+            <div class="hero-actions">
+              <button class="button button-primary" data-scroll="#vault">
+                Explore the vault
+              </button>
+              <button class="button button-secondary" data-scroll="#ops">
+                View revenue ops
+              </button>
+            </div>
+            <div class="hero-stats" id="hero-stats"></div>
+          </div>
+
+          <aside class="hero-rail">
+            <div class="rail-card launch-card">
+              <p class="eyebrow">Next revenue action</p>
+              <h2>Publish "AI Prompting Made Simple" this week.</h2>
+              <p>
+                Route sign-ups into the vault, trigger HubSpot nurture, and place the
+                $175 strategy session upsell on the thank-you path.
+              </p>
+              <ul class="mini-list">
+                <li>Lead magnet live on AIwithTracy.com</li>
+                <li>Starter Vault offer: $47 launch price</li>
+                <li>Calendar handoff for strategy sessions</li>
+              </ul>
+            </div>
+
+            <form class="rail-card access-card" id="lead-form">
+              <p class="eyebrow">Simulated vault access</p>
+              <h2>Capture a lead and assign a tier.</h2>
+              <label>
+                Name
+                <input id="lead-name" name="name" placeholder="Tracy" />
+              </label>
+              <label>
+                Email
+                <input
+                  id="lead-email"
+                  name="email"
+                  type="email"
+                  placeholder="you@aiwithtracy.com"
+                  required
+                />
+              </label>
+              <label>
+                Primary segment
+                <select id="lead-segment" name="segment">
+                  <option value="consumer">Consumer</option>
+                  <option value="workforce">Workforce</option>
+                  <option value="education">Education</option>
+                  <option value="business">Business</option>
+                  <option value="community">Community</option>
+                </select>
+              </label>
+              <label>
+                Access tier
+                <select id="lead-tier" name="tier">
+                  <option value="free">Free Explorer</option>
+                  <option value="starter">Starter Vault</option>
+                  <option value="vip">VIP Advisory</option>
+                </select>
+              </label>
+              <button class="button button-primary" type="submit">
+                Save vault profile
+              </button>
+              <p class="form-note" id="lead-feedback">
+                Saved locally to simulate sign-up, access, and CRM routing.
+              </p>
+            </form>
+          </aside>
+        </section>
+
+        <section class="panel launchpad" id="launchpad">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Launch stack</p>
+              <h2>Three-week release plan with built-in funnels.</h2>
+            </div>
+            <div class="callout-badge">Minimum viable vault before mass PDF production</div>
+          </div>
+          <div class="roadmap-grid" id="roadmap-grid"></div>
+          <div class="insight-grid" id="insight-grid"></div>
+        </section>
+
+        <section class="panel" id="vault">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Resource library</p>
+              <h2>Searchable guides, workbooks, assessments, and premium assets.</h2>
+            </div>
+            <div class="section-meta" id="resource-summary"></div>
+          </div>
+          <div class="toolbar">
+            <label>
+              Search
+              <input id="resource-search" placeholder="Prompting, students, audit..." />
+            </label>
+            <label>
+              Audience
+              <select id="resource-audience-filter">
+                <option value="all">All audiences</option>
+              </select>
+            </label>
+            <label>
+              Phase
+              <select id="resource-phase-filter">
+                <option value="all">All phases</option>
+              </select>
+            </label>
+            <label>
+              Tier
+              <select id="resource-tier-filter">
+                <option value="all">All tiers</option>
+              </select>
+            </label>
+          </div>
+          <div class="resource-grid" id="resource-grid"></div>
+        </section>
+
+        <section class="panel" id="prompts">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Prompt library</p>
+              <h2>Filter by domain and copy live-ready prompts.</h2>
+            </div>
+            <div class="section-meta" id="prompt-summary"></div>
+          </div>
+          <div class="toolbar">
+            <label>
+              Search
+              <input id="prompt-search" placeholder="Resume, meal plan, offer..." />
+            </label>
+            <label>
+              Domain
+              <select id="prompt-domain-filter">
+                <option value="all">All domains</option>
+              </select>
+            </label>
+            <label>
+              Source guide
+              <select id="prompt-guide-filter">
+                <option value="all">All guides</option>
+              </select>
+            </label>
+          </div>
+          <div class="prompt-grid" id="prompt-grid"></div>
+        </section>
+
+        <section class="panel" id="tools">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">AI tools directory</p>
+              <h2>Curated stack for Tracy's consumer, workforce, and business offers.</h2>
+            </div>
+            <div class="section-meta" id="tool-summary"></div>
+          </div>
+          <div class="toolbar">
+            <label>
+              Search
+              <input id="tool-search" placeholder="Gamma, Notion, research..." />
+            </label>
+            <label>
+              Category
+              <select id="tool-category-filter">
+                <option value="all">All categories</option>
+              </select>
+            </label>
+            <label>
+              Audience
+              <select id="tool-audience-filter">
+                <option value="all">All audiences</option>
+              </select>
+            </label>
+          </div>
+          <div class="tool-grid" id="tool-grid"></div>
+        </section>
+
+        <section class="panel" id="membership">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Membership and delivery</p>
+              <h2>Tiers, workshops, premium products, and certification tracks.</h2>
+            </div>
+            <div class="section-meta" id="tier-summary"></div>
+          </div>
+          <div class="tier-grid" id="tier-grid"></div>
+          <div class="course-grid" id="course-grid"></div>
+        </section>
+
+        <section class="panel ops-panel" id="ops">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Ops and analytics</p>
+              <h2>Automations, funnel ladders, assessments, and dashboard targets.</h2>
+            </div>
+            <div class="callout-badge">Source of truth: Notion -> HubSpot -> Vault -> Calendar</div>
+          </div>
+
+          <div class="dashboard-shell">
+            <div class="dashboard-metrics" id="dashboard-metrics"></div>
+            <div class="dashboard-funnel" id="dashboard-funnel"></div>
+          </div>
+
+          <div class="automation-grid" id="automation-grid"></div>
+          <div class="assessment-grid" id="assessment-grid"></div>
+          <div class="revenue-grid" id="revenue-grid"></div>
+        </section>
+
+        <section class="panel" id="team">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Agent team</p>
+              <h2>Operating roles for scalable content and platform execution.</h2>
+            </div>
+          </div>
+          <div class="team-grid" id="team-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="detail-dialog" id="detail-dialog">
+      <form method="dialog" class="dialog-shell">
+        <button class="dialog-close" type="submit" aria-label="Close detail view">
+          Close
+        </button>
+        <div id="dialog-content"></div>
+      </form>
+    </dialog>
+
+    <script src="/vault-app/data.js"></script>
+    <script src="/vault-app/app.js"></script>
+  </body>
+</html>

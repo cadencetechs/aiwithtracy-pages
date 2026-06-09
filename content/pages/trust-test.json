@@ -1,0 +1,144 @@
+{
+  "title": "The AI Trust Test™",
+  "slug": "trust-test",
+  "description": "Tracy's 7-question test to help you evaluate AI tools before you commit your data and trust.",
+  "subtitle": "Is This AI Tool Trustworthy?",
+  "sections": [
+    {
+      "heading": "Step 1: Define Your AI Standards",
+      "content": "Clarify the ethical, performance, and privacy standards your AI tools must meet before adoption."
+    },
+    {
+      "heading": "Step 2: Run the AI Trust Test™",
+      "content": "Assess transparency, data handling, bias mitigation, and vendor accountability."
+    },
+    {
+      "heading": "Step 3: Make a Decision",
+      "content": "Decide whether to adopt, monitor, or reject based on your evaluation results."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "Do you know what data this AI collects and how it uses it?",
+      "description": "Look for whether chats are stored, used for training, or shared with vendors. Ask in the app: \"What data do you store and how do you use it?\"",
+      "answers": [
+        { "text": "Not at all", "value": "danger" },
+        { "text": "Barely", "value": "danger" },
+        { "text": "Somewhat", "value": "caution" },
+        { "text": "Mostly", "value": "caution" },
+        { "text": "Completely", "value": "safe" }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Does the company publish safety notes, model cards, or risk discussions?",
+      "description": "Docs or blog posts that show testing, limitations, or red-team notes.",
+      "answers": [
+        { "text": "Not at all", "value": "danger" },
+        { "text": "Barely", "value": "danger" },
+        { "text": "Somewhat", "value": "caution" },
+        { "text": "Mostly", "value": "caution" },
+        { "text": "Completely", "value": "safe" }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Can you prevent training on your data and delete/export your data easily?",
+      "description": "Settings, data controls, export, deletion, enterprise toggles.",
+      "answers": [
+        { "text": "Not at all", "value": "danger" },
+        { "text": "Barely", "value": "danger" },
+        { "text": "Somewhat", "value": "caution" },
+        { "text": "Mostly", "value": "caution" },
+        { "text": "Completely", "value": "safe" }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Is there a status page or uptime/benchmark history?",
+      "description": "Look for uptime history, changelogs, or audit summaries.",
+      "answers": [
+        { "text": "Not at all", "value": "danger" },
+        { "text": "Barely", "value": "danger" },
+        { "text": "Somewhat", "value": "caution" },
+        { "text": "Mostly", "value": "caution" },
+        { "text": "Completely", "value": "safe" }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Is there a clear privacy policy (region hosting, SOC2/ISO, DPA)?",
+      "description": "Prefer vendors with security certifications and DPAs.",
+      "answers": [
+        { "text": "Not at all", "value": "danger" },
+        { "text": "Barely", "value": "danger" },
+        { "text": "Somewhat", "value": "caution" },
+        { "text": "Mostly", "value": "caution" },
+        { "text": "Completely", "value": "safe" }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Do they disclose fine-tuning or third-party data sharing?",
+      "description": "Check ToS and privacy for subprocessors and FT policies.",
+      "answers": [
+        { "text": "Not at all", "value": "danger" },
+        { "text": "Barely", "value": "danger" },
+        { "text": "Somewhat", "value": "caution" },
+        { "text": "Mostly", "value": "caution" },
+        { "text": "Completely", "value": "safe" }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Is turning off data training or deleting conversations straightforward?",
+      "description": "One-click or obvious steps is a green flag.",
+      "answers": [
+        { "text": "Not at all", "value": "danger" },
+        { "text": "Barely", "value": "danger" },
+        { "text": "Somewhat", "value": "caution" },
+        { "text": "Mostly", "value": "caution" },
+        { "text": "Completely", "value": "safe" }
+      ]
+    }
+  ],
+  "results": {
+    "trusted": {
+      "title": "✅ Trusted AI",
+      "description": "This tool passes Tracy's AI Trust Test™. It's transparent, safe, and user-friendly. Move forward with confidence!",
+      "nextSteps": [
+        { "text": "Book a strategy call", "action": "booking" },
+        { "text": "Learn more about AI strategy", "action": "learn" }
+      ]
+    },
+    "caution": {
+      "title": "⚠️ Proceed With Caution",
+      "description": "This AI shows yellow flags. Read its terms carefully and double-check outputs before heavy use.",
+      "nextSteps": [
+        { "text": "Book a strategy call", "action": "booking" },
+        { "text": "Download the AI Trust Test™ PDF", "action": "download" }
+      ]
+    },
+    "danger": {
+      "title": "❌ Fails the Trust Test",
+      "description": "This tool fails key checks. It hides data practices, lacks transparency, or hasn't been independently validated.",
+      "nextSteps": [
+        { "text": "Consider Tracy's vetted alternatives", "action": "alternatives" },
+        { "text": "Book a strategy call", "action": "booking" }
+      ]
+    }
+  },
+  "proReport": {
+    "title": "Want an automated vendor report?",
+    "description": "Pro scans policy pages, lawsuits, training data clues, provenance support, and more.",
+    "cta": {
+      "text": "Get Pro Report (coming soon)",
+      "link": "#pro-report"
+    }
+  },
+  "cta": {
+    "text": "Take the AI Trust Test™",
+    "link": "/ai-trust-test"
+  }
+}

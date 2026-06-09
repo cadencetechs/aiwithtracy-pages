@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ═══════════════════════════════════
+         TITLE
+    ═══════════════════════════════════ -->
+    <title>AI with Tracy | Simple AI Solutions for Business Owners</title>
+
+    <!-- ═══════════════════════════════════
+         PRIMARY META
+         (Preserving your existing copy — it's solid)
+    ═══════════════════════════════════ -->
+    <meta
+      name="description"
+      content="Stop AI anxiety. Simple AI solutions for business owners who want practical results without the technical overwhelm. Courses, workshops, and daily AI education from Oracle-certified AI architect Tracy Williams."
+    />
+    <meta
+      name="keywords"
+      content="AI for business owners, AI training, AI tools for entrepreneurs, AI education, learn AI, AI with Tracy, AI courses, AI workshops, small business AI, AI productivity, Tracy Williams"
+    />
+    <meta name="author" content="Tracy Williams" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ═══════════════════════════════════
+         CANONICAL
+         (Keep as-is if already present in your file)
+    ═══════════════════════════════════ -->
+    <link rel="canonical" href="https://aiwithtracy.com/" />
+
+    <!-- ═══════════════════════════════════
+         FIX 2A: Cross-brand crawlable link
+         Add this line — it does NOT exist in your current file
+    ═══════════════════════════════════ -->
+    <link rel="me" href="https://www.cadencetechs.com" />
+
+    <!-- ═══════════════════════════════════
+         OPEN GRAPH
+    ═══════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aiwithtracy.com/" />
+    <meta
+      property="og:title"
+      content="AI with Tracy | Simple AI Solutions for Business Owners"
+    />
+    <meta
+      property="og:description"
+      content="Stop AI anxiety. Practical AI education for business owners — courses, workshops, and daily AI content from Oracle-certified AI architect Tracy Williams."
+    />
+    <!-- SWAP: Confirm this path exists in your /public folder -->
+    <meta property="og:image" content="https://aiwithtracy.com/og-image.png" />
+    <meta property="og:site_name" content="AI with Tracy" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ═══════════════════════════════════
+         TWITTER / X CARD
+    ═══════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aiwithtracy" />
+    <meta name="twitter:creator" content="@aiwithtracy" />
+    <meta
+      name="twitter:title"
+      content="AI with Tracy | Simple AI Solutions for Business Owners"
+    />
+    <meta
+      name="twitter:description"
+      content="Stop AI anxiety. Practical AI education for business owners — courses, workshops, and daily AI content."
+    />
+    <meta name="twitter:image" content="https://aiwithtracy.com/og-image.png" />
+
+    <!-- ═══════════════════════════════════
+         FAVICON
+    ═══════════════════════════════════ -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- ═══════════════════════════════════
+         GOOGLE ANALYTICS 4
+         (Preserving your existing GA4 tag — already present)
+         SWAP: Confirm G-XXXXXXXXXX matches your actual ID
+    ═══════════════════════════════════ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+
+    <!-- ═══════════════════════════════════
+         FIX 2B + 2C: JSON-LD STRUCTURED DATA
+         Changes from your current file:
+           1. "name": "Tracy" → "name": "Tracy Williams"  (Fix 2C)
+           2. Added "cadencetechs.com" to sameAs arrays     (Fix 2B)
+           3. Added hasCredential block for Oracle OCI cert
+           4. Added cadencetechs.com to Organization sameAs
+
+         Everything else preserves your existing structure.
+    ═══════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://aiwithtracy.com/#tracy-williams",
+          "name": "Tracy Williams",
+          "jobTitle": "CEO, AI Infrastructure Architect & Educator",
+          "description": "Oracle OCI Generative AI Professional. Founder of AI with Tracy and Cadence Technologies. 20+ years instructional design experience.",
+          "url": "https://aiwithtracy.com",
+          "image": "https://aiwithtracy.com/tracy-williams.jpg",
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Oracle OCI Generative AI Professional",
+            "credentialCategory": "Professional Certification",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Oracle"
+            }
+          },
+          "sameAs": [
+            "https://www.cadencetechs.com",
+            "https://www.tiktok.com/@aiwithtracy",
+            "https://cadencetech.gumroad.com"
+            /* SWAP: Add your LinkedIn profile URL here */
+          ],
+          "knowsAbout": [
+            "Artificial Intelligence",
+            "AI Tools for Business",
+            "Instructional Design",
+            "AI Infrastructure",
+            "Agentic AI Systems",
+            "Business Automation"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://aiwithtracy.com/#organization",
+          "name": "AI with Tracy",
+          "url": "https://aiwithtracy.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://aiwithtracy.com/logo.png"
+          },
+          "description": "AI education brand teaching business owners how to use AI tools for income, productivity, and business growth.",
+          "founder": {
+            "@id": "https://aiwithtracy.com/#tracy-williams"
+          },
+          "sameAs": [
+            "https://www.cadencetechs.com",
+            "https://www.tiktok.com/@aiwithtracy",
+            "https://cadencetech.gumroad.com"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Henderson",
+            "addressRegion": "NC",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://aiwithtracy.com/#website",
+          "url": "https://aiwithtracy.com",
+          "name": "AI with Tracy",
+          "publisher": {
+            "@id": "https://aiwithtracy.com/#organization"
+          }
+        }
+      ]
+    }
+    </script>
+    <script>
+      (function (location) {
+        if (location.search[1] === "/") {
+          var decoded = location.search
+            .slice(1)
+            .split("&")
+            .map(function (segment) {
+              return segment.replace(/~and~/g, "&");
+            })
+            .join("?");
+
+          window.history.replaceState(
+            null,
+            "",
+            location.pathname.slice(0, -1) + decoded + location.hash,
+          );
+        }
+      })(window.location);
+    </script>
+    <script type="module" crossorigin src="/assets/index-BzZIzUi2.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CfLrIBbY.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+</html>

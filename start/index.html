@@ -1,75 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Start Here | AI with Tracy</title>
-  <meta name="description" content="Everything AI with Tracy in one place. Learn AI, explore practical tools, and find the right next step for you, your family, or your business." />
-  <link rel="canonical" href="https://aiwithtracy.com/start" />
-  <style>
-    :root{--navy:#08152f;--navy2:#0d2148;--gold:#f5c451;--teal:#27c8c1;--purple:#9b72ff;--white:#fff;--muted:#cbd5e1;--card:rgba(255,255,255,.075);--line:rgba(255,255,255,.15)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--white);background:radial-gradient(circle at 15% 0%,rgba(39,200,193,.18),transparent 34%),radial-gradient(circle at 85% 8%,rgba(155,114,255,.2),transparent 32%),linear-gradient(160deg,var(--navy),#061126 58%,#0b1734);min-height:100vh}
-    a{color:inherit}.wrap{width:min(760px,calc(100% - 32px));margin:0 auto;padding:28px 0 56px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:34px}.brand{font-weight:900;letter-spacing:.02em}.brand span{color:var(--gold)}.home{font-size:.9rem;color:var(--muted);text-decoration:none}.hero{text-align:center;padding:20px 4px 28px}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid rgba(245,196,81,.45);border-radius:999px;color:var(--gold);font-size:.75rem;font-weight:800;letter-spacing:.12em}.hero h1{font-size:clamp(2.15rem,9vw,4.4rem);line-height:.98;margin:18px 0 16px;letter-spacing:-.055em}.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--gold),var(--teal),#cab8ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:610px;margin:0 auto;color:var(--muted);font-size:1.05rem;line-height:1.65}.note{margin-top:14px;color:#f8e5a6;font-size:.9rem}.featured{border:1px solid rgba(245,196,81,.5);background:linear-gradient(145deg,rgba(245,196,81,.13),rgba(39,200,193,.08));box-shadow:0 24px 60px rgba(0,0,0,.24);border-radius:26px;padding:24px;margin:12px 0 30px}.tag{font-size:.72rem;font-weight:900;letter-spacing:.12em;color:var(--gold);text-transform:uppercase}.featured h2{font-size:1.55rem;margin:9px 0}.featured p{color:var(--muted);line-height:1.55;margin:0 0 18px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.btn{display:flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;font-weight:850;border-radius:14px;padding:14px 16px;min-height:50px}.btn.primary{background:var(--gold);color:#13203d}.btn.secondary{border:1px solid rgba(255,255,255,.26);background:rgba(255,255,255,.08)}.section{margin:24px 0}.section h2{font-size:1.05rem;margin:0 0 12px;color:#f8fafc}.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.link{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-decoration:none;transition:.18s ease}.link:hover{transform:translateY(-2px);border-color:rgba(39,200,193,.55);background:rgba(255,255,255,.11)}.link b{display:block;font-size:.96rem}.link small{display:block;color:var(--muted);margin-top:4px;line-height:1.35}.arrow{color:var(--teal);font-size:1.15rem}.bottom{margin-top:34px;padding:26px;border-radius:24px;text-align:center;background:linear-gradient(135deg,rgba(155,114,255,.18),rgba(39,200,193,.15));border:1px solid rgba(255,255,255,.16)}.bottom h2{margin:0 0 8px;font-size:1.55rem}.bottom p{color:var(--muted);margin:0 0 16px}.bottom .btn{max-width:300px;margin:0 auto;background:var(--teal);color:#06152e}.footer{text-align:center;color:#91a0b8;font-size:.78rem;margin-top:30px}@media(max-width:620px){.actions,.grid{grid-template-columns:1fr}.wrap{width:min(100% - 22px,760px)}.featured{padding:20px}.hero{padding-top:8px}.top{margin-bottom:22px}}
-  </style>
-</head>
-<body>
-  <main class="wrap">
-    <header class="top"><div class="brand">AI with <span>Tracy</span></div><a class="home" href="/">Visit main site</a></header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <section class="hero">
-      <div class="eyebrow">THE AI WITH TRACY HUB</div>
-      <h1>Everything AI with Tracy, <em>in one place.</em></h1>
-      <p>Learn AI, explore practical tools, and find the right next step for you, your family, or your business.</p>
-      <div class="note">Coming from TikTok? Start with the featured resource below.</div>
-    </section>
+    <!-- ═══════════════════════════════════
+         TITLE
+    ═══════════════════════════════════ -->
+    <title>AI with Tracy | Simple AI Solutions for Business Owners</title>
 
-    <section class="featured">
-      <div class="tag">Featured resource</div>
-      <h2>Child-Safe Parent AI Companion</h2>
-      <p>A family-focused resource designed to help parents explore AI with more structure, supervision, safety, and intention.</p>
-      <div class="actions">
-        <a class="btn primary" href="https://family-ai-learning-system.aiwithtracy.chatgpt.site">Explore the Companion</a>
-        <a class="btn secondary" href="https://buy.stripe.com/3cI7sLd44gfI8fe6RG0x207">Get the Parent Toolkit · $29</a>
-      </div>
-    </section>
+    <!-- ═══════════════════════════════════
+         PRIMARY META
+         (Preserving your existing copy — it's solid)
+    ═══════════════════════════════════ -->
+    <meta
+      name="description"
+      content="Stop AI anxiety. Simple AI solutions for business owners who want practical results without the technical overwhelm. Courses, workshops, and daily AI education from Oracle-certified AI architect Tracy Williams."
+    />
+    <meta
+      name="keywords"
+      content="AI for business owners, AI training, AI tools for entrepreneurs, AI education, learn AI, AI with Tracy, AI courses, AI workshops, small business AI, AI productivity, Tracy Williams"
+    />
+    <meta name="author" content="Tracy Williams" />
+    <meta name="robots" content="index, follow" />
 
-    <section class="section">
-      <h2>Learn AI</h2>
-      <div class="grid">
-        <a class="link" href="/free-jumpstart"><span><b>Free AI Jumpstart</b><small>Start learning without the overwhelm.</small></span><span class="arrow">→</span></a>
-        <a class="link" href="/workshops"><span><b>Workshops</b><small>Hands-on training for practical AI use.</small></span><span class="arrow">→</span></a>
-        <a class="link" href="/chatgpt-at-work"><span><b>ChatGPT at Work</b><small>Turn ChatGPT into a real work tool.</small></span><span class="arrow">→</span></a>
-        <a class="link" href="/events"><span><b>Events</b><small>See upcoming sessions and experiences.</small></span><span class="arrow">→</span></a>
-      </div>
-    </section>
+    <!-- ═══════════════════════════════════
+         CANONICAL
+         (Keep as-is if already present in your file)
+    ═══════════════════════════════════ -->
+    <link rel="canonical" href="https://aiwithtracy.com/" />
 
-    <section class="section">
-      <h2>Tools &amp; Resources</h2>
-      <div class="grid">
-        <a class="link" href="/starter-kit"><span><b>AI Workday Starter Kit</b><small>A practical first-hour framework.</small></span><span class="arrow">→</span></a>
-        <a class="link" href="/vault"><span><b>Resource Vault</b><small>Guides, prompts, tools, and learning assets.</small></span><span class="arrow">→</span></a>
-        <a class="link" href="/digital-shop"><span><b>Digital Shop</b><small>Prompt packs, playbooks, and templates.</small></span><span class="arrow">→</span></a>
-        <a class="link" href="/ai-trust-test"><span><b>AI Trust Test</b><small>Check whether an AI result deserves your trust.</small></span><span class="arrow">→</span></a>
-      </div>
-    </section>
+    <!-- ═══════════════════════════════════
+         FIX 2A: Cross-brand crawlable link
+         Add this line — it does NOT exist in your current file
+    ═══════════════════════════════════ -->
+    <link rel="me" href="https://www.cadencetechs.com" />
 
-    <section class="section">
-      <h2>Work With Tracy</h2>
-      <div class="grid">
-        <a class="link" href="/work-with-me"><span><b>Private Strategy</b><small>Consulting, workflow design, and speaking.</small></span><span class="arrow">→</span></a>
-        <a class="link" href="/ai-for-teams"><span><b>AI for Teams</b><small>Practical, responsible team adoption.</small></span><span class="arrow">→</span></a>
-        <a class="link" href="/workforce/ai-readiness"><span><b>Workforce AI Readiness</b><small>Programs for institutions and communities.</small></span><span class="arrow">→</span></a>
-        <a class="link" href="/cadence-technologies"><span><b>Cadence Technologies</b><small>Business systems, technology, and transformation.</small></span><span class="arrow">→</span></a>
-      </div>
-    </section>
+    <!-- ═══════════════════════════════════
+         OPEN GRAPH
+    ═══════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aiwithtracy.com/" />
+    <meta
+      property="og:title"
+      content="AI with Tracy | Simple AI Solutions for Business Owners"
+    />
+    <meta
+      property="og:description"
+      content="Stop AI anxiety. Practical AI education for business owners — courses, workshops, and daily AI content from Oracle-certified AI architect Tracy Williams."
+    />
+    <!-- SWAP: Confirm this path exists in your /public folder -->
+    <meta property="og:image" content="https://aiwithtracy.com/og-image.png" />
+    <meta property="og:site_name" content="AI with Tracy" />
+    <meta property="og:locale" content="en_US" />
 
-    <section class="bottom">
-      <h2>Ready to begin?</h2>
-      <p>Take the first step with a free, practical introduction to AI.</p>
-      <a class="btn" href="/free-jumpstart">Start Free →</a>
-    </section>
+    <!-- ═══════════════════════════════════
+         TWITTER / X CARD
+    ═══════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aiwithtracy" />
+    <meta name="twitter:creator" content="@aiwithtracy" />
+    <meta
+      name="twitter:title"
+      content="AI with Tracy | Simple AI Solutions for Business Owners"
+    />
+    <meta
+      name="twitter:description"
+      content="Stop AI anxiety. Practical AI education for business owners — courses, workshops, and daily AI content."
+    />
+    <meta name="twitter:image" content="https://aiwithtracy.com/og-image.png" />
 
-    <footer class="footer">© 2026 AI with Tracy · Practical AI for real life and work</footer>
-  </main>
-</body>
+    <!-- ═══════════════════════════════════
+         FAVICON
+    ═══════════════════════════════════ -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- ═══════════════════════════════════
+         GOOGLE ANALYTICS 4
+         (Preserving your existing GA4 tag — already present)
+         SWAP: Confirm G-XXXXXXXXXX matches your actual ID
+    ═══════════════════════════════════ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+
+    <!-- ═══════════════════════════════════
+         FIX 2B + 2C: JSON-LD STRUCTURED DATA
+         Changes from your current file:
+           1. "name": "Tracy" → "name": "Tracy Williams"  (Fix 2C)
+           2. Added "cadencetechs.com" to sameAs arrays     (Fix 2B)
+           3. Added hasCredential block for Oracle OCI cert
+           4. Added cadencetechs.com to Organization sameAs
+
+         Everything else preserves your existing structure.
+    ═══════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://aiwithtracy.com/#tracy-williams",
+          "name": "Tracy Williams",
+          "jobTitle": "CEO, AI Infrastructure Architect & Educator",
+          "description": "Oracle OCI Generative AI Professional. Founder of AI with Tracy and Cadence Technologies. 20+ years instructional design experience.",
+          "url": "https://aiwithtracy.com",
+          "image": "https://aiwithtracy.com/tracy-williams.jpg",
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Oracle OCI Generative AI Professional",
+            "credentialCategory": "Professional Certification",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Oracle"
+            }
+          },
+          "sameAs": [
+            "https://www.cadencetechs.com",
+            "https://www.tiktok.com/@aiwithtracy",
+            "https://cadencetech.gumroad.com"
+            /* SWAP: Add your LinkedIn profile URL here */
+          ],
+          "knowsAbout": [
+            "Artificial Intelligence",
+            "AI Tools for Business",
+            "Instructional Design",
+            "AI Infrastructure",
+            "Agentic AI Systems",
+            "Business Automation"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://aiwithtracy.com/#organization",
+          "name": "AI with Tracy",
+          "url": "https://aiwithtracy.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://aiwithtracy.com/logo.png"
+          },
+          "description": "AI education brand teaching business owners how to use AI tools for income, productivity, and business growth.",
+          "founder": {
+            "@id": "https://aiwithtracy.com/#tracy-williams"
+          },
+          "sameAs": [
+            "https://www.cadencetechs.com",
+            "https://www.tiktok.com/@aiwithtracy",
+            "https://cadencetech.gumroad.com"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Henderson",
+            "addressRegion": "NC",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://aiwithtracy.com/#website",
+          "url": "https://aiwithtracy.com",
+          "name": "AI with Tracy",
+          "publisher": {
+            "@id": "https://aiwithtracy.com/#organization"
+          }
+        }
+      ]
+    }
+    </script>
+    <script>
+      (function (location) {
+        if (location.search[1] === "/") {
+          var decoded = location.search
+            .slice(1)
+            .split("&")
+            .map(function (segment) {
+              return segment.replace(/~and~/g, "&");
+            })
+            .join("?");
+
+          window.history.replaceState(
+            null,
+            "",
+            location.pathname.slice(0, -1) + decoded + location.hash,
+          );
+        }
+      })(window.location);
+    </script>
+    <script type="module" crossorigin src="/assets/index-BmwDA0xX.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-feVHIoxl.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
 </html>
